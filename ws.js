@@ -23,7 +23,7 @@ socket.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
     const time = Date.now()
-    console.log(new Date(time).getSeconds())
+    // console.log(new Date(time).getSeconds())
     const ticker = {
         open: data.k.o,
         close: data.k.c,

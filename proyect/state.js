@@ -3,7 +3,7 @@ const {stateType} = require('./typesStates')
 // const {short, long, closeShort, closeLong} = require('./binance')
 const {database} = require('./firebase')
 
-let state = stateType.preCompra
+let state = stateType.search
 let ordenActual = {
     precio: 0,
     stopLoss: 0,
