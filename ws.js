@@ -34,8 +34,8 @@ socket.onmessage = function (event) {
     
     const Bollinger = bb(20, 2, '15m').then(a => {
         main(ticker, a)
-        console.log(ticker)
-        console.log(a)
+        // console.log(ticker)
+        // console.log(a)
     })
 
     
