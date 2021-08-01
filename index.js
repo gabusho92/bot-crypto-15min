@@ -5,7 +5,7 @@ const port = process.env.PORT || 8080
 
 require('./ws')
 
-app.get('/', (res, req) => {
+app.get('/', (req, res) => {
     res.send('hello')
 })
 
