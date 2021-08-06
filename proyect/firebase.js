@@ -15,7 +15,7 @@ const firestore = db.firestore()
 
 
 const database = async (result) => {
-  const data = await firestore.collection('1hora').doc('T4w6ZsFXjbd257ER2puK')
+  const data = await firestore.collection('15min').doc('fMpPSaao1o4a7xdfVr4c')
   const res = await data.get()
   const sl =  res.data().stopLoss
   const tp = res.data().takeProfit
