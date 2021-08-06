@@ -2,7 +2,7 @@ const WebSocket = require('ws')
 const {main} = require('./proyect/state')
 // Symbol: ETH/USDT - Kline 30 minutes.
 
-var socket = new WebSocket('wss://fstream.binance.com/ws/btcusdt@kline_5m');
+var socket = new WebSocket('wss://fstream.binance.com/ws/btcusdt@kline_1h');
 const {bb} = require('./proyect/bandasBollinger')
 const {stateType} = require('./proyect/typesStates')
 
@@ -32,7 +32,7 @@ socket.onmessage = function (event) {
         candleClosed: data.k.x
     }
     
-    const Bollinger = bb(20, 2, '5m').then(a => {
+    const Bollinger = bb(20, 2, '1h').then(a => {
         main(ticker, a)
         // console.log(ticker)
         // console.log(a)
