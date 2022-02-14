@@ -1,13 +1,13 @@
 const firebase = require('firebase')
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCoozG4B3zmieu5--epCa63ge8_bEqNQHQ",
-    authDomain: "tradingbtc-b4b21.firebaseapp.com",
-    projectId: "tradingbtc-b4b21",
-    storageBucket: "tradingbtc-b4b21.appspot.com",
-    messagingSenderId: "42940626475",
-    appId: "1:42940626475:web:3d291ecff943b1c31e5c6e",
-    measurementId: "G-YVFY6XPTX6"
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
   };
   // Initialize Firebase
 const db = firebase.initializeApp(firebaseConfig);

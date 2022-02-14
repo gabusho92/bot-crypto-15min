@@ -3,8 +3,8 @@ const {firestore} = require('./firebase')
 
 
 const binance = new Binance().options({
-    APIKEY: '7lRQv8MDa2zAtXa2k9H9Duf1WiZT0eFGKvDsFXDfaBFA7og2xprY57kqHHMhsuLO ',
-    APISECRET: 'eE6Epa0RYtQia1ad1hIQwwKcq4w6XKXhlqHEAEGTZGWlRpv7almVDtr8QD7SNA52'
+    APIKEY: '',
+    APISECRET: ''
   });
 
 
